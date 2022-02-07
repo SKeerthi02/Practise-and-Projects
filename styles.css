@@ -1,6 +1,22 @@
 body{
     font-family: 'Nunito', sans-serif;
 }
+
+:root {
+    --primary-color: #0ea5e9;
+    --stone: #78716c;
+    --background: #d1d5db;
+    --orange: #f97316;
+    --alert-sucess: #84cc16;
+    --alert-failure: #dc2626;
+    --alert-caution: #eab308;
+    --alert-primary: #0ea5e9;
+    --online: #22c55e;
+    --inactive: #facc15;
+    --busy: #dc2626;
+    --away: #9ca3af;
+}
+
 .container {
     margin: 10px;
 }
@@ -20,4 +36,97 @@ body{
     width: 70px;
     height: 70px;
     border-radius: 50%;
+}
+
+.alerts-container{
+    margin-top: 10px;
+}
+.alert{
+    width: 320px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    margin: 10px;
+}
+.button{
+    border: none;
+    background: inherit;
+    cursor: pointer;
+}
+.alert-container{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.alert-success{
+    background-color: var(--alert-sucess);
+}
+
+.alert-failure{
+    background-color: var(--alert-failure);
+}
+
+.alert-caution{
+    background-color: var(--alert-caution);
+}
+.alert-primary{
+    background-color: var(--alert-primary);
+}
+.badge-avatar{
+    display: flex;
+}
+.badge-circle{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -3rem;
+    left: -1rem;
+}
+
+.online-avatar{
+    vertical-align: middle;
+    width: 75px;
+    height: 75px;
+}
+.badge-avatars {
+    display: flex;
+    flex-wrap: wrap;
+}
+.badge-circle-time{
+    width: 24px;
+    height: 16px;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge-online{
+    background-color: var(--online);
+}
+.badge-inactive{
+    background-color: var(--inactive);
+}
+.badge-busy{
+    background-color: var(--busy);
+}
+.badge-away{
+    background-color: var(--away);
+}
+
+.badge-circle-away{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+}
+.cart-quantity{
+    color: var(--orange);
+    font-size: 18px;
+    font-weight: 700;
 }
