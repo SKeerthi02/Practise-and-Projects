@@ -131,9 +131,76 @@
     <h3>Badges on Icons</h3>
     <div class="badge-icon">
         <button class="button button-badge-icon">
-            <i class="fas fa-shopping-cart fa-3x"></i>
+            <i class="fas fa-shopping-cart fa-3x badge-icon-primary"></i>
         </button>
         <div class="badge-circle cart-quantity">5</div>
+        <button class="button button-badge-icon">
+            <i class="fas fa-shopping-cart fa-3x badge-icon-fav"></i>
+        </button>
+        <div class="badge-circle cart-quantity">5</div>
+    </div>
+    <hr>
+
+    <h3>Primary buttons using Button html element</h3>
+    <div class="actionable-buttons">
+        <button class="btn btn-primary-main">CLICK ME</button>
+        <button class="btn btn-primary-danger">KILL ME</button>
+        <button class="btn btn-primary-hit">HIT ME</button>
+        <button class="btn btn-primary-tulip">GRAB A BEER</button>
+    </div>
+    <h3>Secondary buttons using Button html element</h3>
+    <div class="actionable-buttons">
+        <button class="btn-secondary btn-secondary-main">CLICK ME</button>
+        <button class="btn-secondary btn-secondary-danger">KILL ME</button>
+        <button class="btn-secondary btn-secondary-hit">HIT ME</button>
+        <button class="btn-secondary btn-secondary-tulip">GRAB A BEER</button>
+    </div>
+    <hr>
+    <h3> HTML forms with validation</h3>
+    <form action="">
+        <label for="email">Email (required):</label><br>
+        <input type="text" id="email" name="email" value="" class="input"><br><br>
+        <label for="numTickets"><abbr title="Number">No.</abbr> of Tickets:</label><br>
+        <input type="number" id="numTickets" name="numTickets" value="" required  min="1" max="4">
+    </form>
+
+    <h3>This is a card structure, inspired by one of the codepen samples but I have designed the layout by myself</h3>
+    <div class="card">
+        <div class="top">
+            <img src="images/nike-shoe.png" class="product-image">
+        </div>
+        <div class="bottom">
+            <div class="product-info">
+                <div class="product-name">
+                    <h3 class="product-type">Hiking Shoes</h3>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-heading">Mountain Collection</h3>
+                    <h2 class="product-description">Men High Altitude</h2>
+                    <div class="product-price">
+                        <h4><span class="fa fa-dollar"></span>150</h4>
+                        <h4 class="dis"><span class="fa fa-dollar"></span>200</h4>
+                    </div>
+
+                </div>
+                <ul class="product-size">
+                    <li class="size-heading">SIZE</li>
+                    <li class="pro-size">9</li>
+                    <li class="pro-size">10</li>
+                    <li class="pro-size">11</li>
+                    <li class="pro-size">12</li>
+                </ul>
+                <ul class="product-colors">
+                    <li class="size-heading">COLORS</li>
+                    <li class="pro-color color-circle yellow"></li>
+                    <li class="pro-color color-circle blue"></li>
+                    <li class="pro-color color-circle purple"></li>
+                    <li class="pro-color color-circle black"></li>
+                </ul>
+                <span class="foot"><i class="fa fa-shopping-bag"></i>Buy Now</span>
+                <span class="foot"><i class="fa fa-shopping-cart"></i>Add To Cart</span>
+            </div>
+        </div>
     </div>
 </div>
 </body>
