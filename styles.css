@@ -27,6 +27,7 @@ body{
     vertical-align: middle;
     width: 50px;
     height: 50px;
+    margin: 5px;
 }
 .circle-avatars {
     display: flex;
@@ -41,6 +42,7 @@ body{
     border-radius: 50%;
 }
 
+/* Alerts CSS */
 .alerts-container{
     margin-top: 10px;
 }
@@ -77,6 +79,8 @@ body{
 .alert-primary{
     background-color: var(--alert-primary);
 }
+
+/* badges */
 .badge-avatar{
     display: flex;
 }
@@ -129,6 +133,8 @@ body{
     font-weight: bolder;
 }
 
+/* badge icon CSS*/
+
 .badge-icon{
     display: flex;
 }
@@ -150,6 +156,7 @@ body{
     color: var(--orange)
 }
 
+/* buttons CSS */
 .actionable-buttons{
     display: flex;
 }
@@ -258,15 +265,42 @@ body{
     background: var(--tulip);
 }
 
-.input{
-    width: 240px;
+/* input form */
+form {
+    max-width: 450px;
+}
+form > div {
+    position: relative;
+    margin: 2px;
+}
+form > div > input {
+    width: 300px;
     height: 30px;
 }
-#input:required {
-    background: red;
-    border:1px solid #999;
+form > div > label {
+    opacity: 0.3;
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
 }
 
+form > div > input[type="text"]:focus + label,
+form > div > input[type="email"]:focus + label,
+form > div > input[type="password"]:focus + label {
+    opacity: 0;
+}
+
+form > input[type="text"]:valid,
+form > input[type="email"]:valid,
+form > input[type="password"]:valid {
+    border: 1px solid var(--alert-sucess);
+}
+
+form > input[type="text"]:valid + label,
+form > input[type="email"]:valid + label,
+form > input[type="password"]:valid + label {
+    opacity: 0;
+}
 
 /* CSS for Cards*/
 .card {
@@ -460,4 +494,16 @@ h4.dis {
 .foot:hover {
     color: var(--orange);
     cursor: pointer;
+}
+
+/* responsive image*/
+.profile-pic {
+    width: 25%;
+    margin: 3%;
+}
+
+.profile-pic-circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
